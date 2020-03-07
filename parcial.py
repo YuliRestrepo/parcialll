@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 data = {'Tiempo':['Lluvioso'],'Temperatura':['30 grados'], 'Humedad':['10%']}
 df = pd.DataFrame(data, columns = ['Tiempo','Temperatura','Humedad'])
-df.to_csv('09052019.csv')
+df.to_csv('03062020.csv')
 
 def myparser(x):
     return datetime.strptime(x, '%d/%m/%Y %H:%M:%S')
