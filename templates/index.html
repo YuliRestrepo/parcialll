@@ -1,14 +1,32 @@
-<table class="table table-striped table-sm">
-    
-    <tbody>
-      {% for vista in listk%}
-      <tr>
-        
-        <td>{{ vista[1] }}</td>
-        <td>{{ vista [2] }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1 class>SAVE TEMPERATURE</h1>
+    <div class="row">
+          <form action="/" method="POST">
+            <div class="form-group">
+              <label for="temperature">Temperature:</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="temperature"
+                  step="0.5"
+                />
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-tint"></span>
+                </span>
+              </div>
+              <label for="time">Date:</label>
+              <div class="input-group date" id="datetimepicker1">
+                <input type="text" class="form-control" name="time"/>
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+              </div>
+          </form>
+    </div>
+  </body>
+</html>
 
-  <article>Se utilizo el patron fachada, para mejorar la vista del archivo</article>
+<article>Se utilizo el patron fachada, para la vista del archivo</article>
